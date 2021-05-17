@@ -81,37 +81,37 @@
     <br>
     <br>
 
-    <div class="slideshow-container text-center">
+    <div id="demo" class="carousel slide text-center" data-ride="carousel">
 
-        <div class="mySlides">
-          <div class="numbertext">1 / 3</div>
-          <img src="fotky/1jpg.jpg" style="width:100%">
-          <div class="text"></div>
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+    
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="fotky/1jpg.jpg" alt="Los Angeles">
         </div>
-        
-        <div class="mySlides">
-          <div class="numbertext">2 / 3</div>
-          <img src="fotky/4.jpg" style="width:100%">
-          <div class="text"></div>
+        <div class="carousel-item">
+          <img src="fotky/4.jpg" alt="Chicago">
         </div>
-        
-        <div class="mySlides">
-          <div class="numbertext">3 / 3</div>
-          <img src="fotky/5.jpg" style="width:100%">
-          <div class="text"></div>
+        <div class="carousel-item">
+          <img src="fotky/5.jpg" alt="New York">
         </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
+      </div>
+    
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    
+    </div>
         
   
     
@@ -196,34 +196,7 @@
             document.body.style.backgroundColor = "white";
         }
     </script>
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-        </script>
+    
 </body>
 
 </html>
