@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaklínač</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <div class="bg-dark text-white jumbotron text-center">
+            <h1 class="text-center">Triss Ranuncul</h1> 
+          </div>
+ 
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html">Úvod</a>
+            <a href="postavy.html">Postavy</a>
+            <a href="bestiar.html">Bestiář</a>
+            <a href="skoly.html">Školy</a>
+            <a href="jak se stat zaklinacem.html">Jak se stát zaklínačem</a>
+            <a href="mapa.html">Mapa</a>
+        </div>
+        <div id="main">
+
+            <span style="font-size:30px;cursor:pointer text-white;" onclick="openNav()"><p class="text-white text-left"><div class="menu"></div>
+                <div class="menu"></div>
+                <div class="menu"></div></p>
+                <div class="container " onclick="myFunction(this)">
+                    
+            </span>
+        </div>
+    </header>
+    <main>
+        <br>
+        <div class="text-center ">
+            <img src="trissconcept.jpg" class="rounded" alt="Cinque Terre" width="20%" height= "20%" >
+            </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2"></div>
+            <p class=" bg-white col-lg bg-light text-break jumbotron text-center">Čarodějka. Je přezdívána "Čtrnáctou z pahorku", protože se mylně domnívalo, že zemřela během bitvy o Soddenský pahorek.
+                Přítelkyně Geralta z Rivie a Yennefer z Vengenbergu, přičemž ke Geraltovi chová velmi silné city. Setkáváme se s ní v Krvi elfů, kde nepotěší Yennefer svým krátkodobým poměrem s Geraltem při svém pobytu na Kaer Morhen.
+                
+                Nějakou dobu se starala o Ciri a je jako její starší sestra. Jen díky jejím námitkám nebyly Ciri nakonec podány škodlivé elixíry, když zaklínači navrhovali, aby podstoupila Zkoušku trav, aby nějak udrželi její magickou sílu. To by totiž Ciri buď zabilo, nebo proměnilo v mutanta, což by znamenalo, že by se stala neplodnou jako ostatní zaklínači.
+                
+                Je zakládající členkou Lóže čarodějek a společně s Fercartem a Keirou Metz rádkyně krále Foltesta.
+                
+                Je známá pro svou krásu a své pěstěné kaštanové vlasy. Rovněž je to schopná léčitelka, která při sobě nosí spoustu magický lektvarů, které ale nikdy sama neužívá, protože je na magii alergická. </p>
+            <div class="col-2"></div>
+            </div>  
+          </div>
+    </main>
+          <footer>
+        
+            <hr style="height:3px; width:50%; border-width:0; color:rgb(255, 255, 255); background-color:rgb(255, 255, 255)">
+    </footer>
+     <p class="text-center">&copy; 2021 -IT1 Václav Vojtovič</p>
+     <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+        

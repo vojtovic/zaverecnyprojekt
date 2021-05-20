@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaklínač</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <div class="bg-dark text-white jumbotron text-center">
+            <h1 class="text-center">Škola Kočky</h1> 
+          </div>
+ 
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html">Úvod</a>
+            <a href="postavy.html">Postavy</a>
+            <a href="bestiar.html">Bestiář</a>
+            <a href="skoly.html">Školy</a>
+            <a href="jak se stat zaklinacem.html">Jak se stát zaklínačem</a>
+            <a href="mapa.html">Mapa</a>
+        </div>
+        <div id="main">
+
+            <span style="font-size:30px;cursor:pointer text-white;" onclick="openNav()"><p class="text-white text-left"><div class="menu"></div>
+                <div class="menu"></div>
+                <div class="menu"></div></p>
+                <div class="container " onclick="myFunction(this)">
+                    
+            </span>
+        </div>
+    </header>
+    <main>
+        <br>
+        <div class="text-center ">
+            <img src="skola kocky.png" class="rounded" alt="Cinque Terre" width="30%" height= "30%" >
+            </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2"></div>
+            <p class=" bg-white col-lg bg-light text-break jumbotron text-center"> Zaklínači ze školy Kočky zradili školu Vlka a vytvořili si svoji vlastní školu. Členové této školy jsou známí především tím, že se nezdráhali přijímat kontrakty jak na příšery, tak na lidi, tudíž se z nich často stávali žoldáci či nájemní vrazi. Tomu je přizpůsoben i jejich výcvik a styl boje. Ten je založen na elfském stylu, upřednostňující rychlost, preciznost a hbitost a spočívá v tom zasáhnout svého soupeře co nejčastěji, ideálně na kritických místech a zároveň limitovat soupeřovu možnost protiútoku. Vzhledem k tomu, že se z nich často stávali nájemní vrazi, lze se domnívat, že v jejich výcviku figurovalo i plížení či maskování, tedy dovednosti vhodné k lovení lidí.  V boji využívali často také kuši. Lze tedy předpokládat, že jednou z taktik těchto zaklínačů bylo způsobit oběti vážné krvácení a poté vystopovat oběť a učinit smrtící zásah. Zaklínači ze školy Kočky také nosili odpovídající zbroj, která byla zpravidla lehčí než u ostatních škol, což jim poskytovalo větší obratnost a pohyblivost. Je důležité zmínit, že zaklínači ze školy Kočky byli ve velké míře psychopati, blázni či trpěli různými formami vyšinutí. Traduje se, že tyto negativní vlastnosti jsou v podstatě vedlejší účinky speciálně upravených mutací, které se využívaly pouze v této škole.
+
+                Škola Kočky byla původně unikátem, neboť neměli hrad, nýbrž karavanu Dyn Marw, která cestovala po světě a tak byli zaklínači této školy ze všech jeho koutů. Karavana je dnes velmi malá a většina koček se usadila na v tvrzi na severu Angrenu.
+                
+                Významní členové: Brehen, Jad Karadin, Gaetan </p>
+            <div class="col-2"></div>
+            </div>  
+          </div>
+    </main>
+          <footer>
+        
+            <hr style="height:3px; width:50%; border-width:0; color:rgb(255, 255, 255); background-color:rgb(255, 255, 255)">
+    </footer>
+     <p class="text-center">&copy; 2021 -IT1 Václav Vojtovič</p>
+     <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
