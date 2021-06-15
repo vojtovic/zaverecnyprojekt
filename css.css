@@ -181,3 +181,7 @@ body, html {
 h1{
   font-family: "Rockwell", "Rockwell";
 }
+.alert-warning {
+  color: white!important;
+  
+}

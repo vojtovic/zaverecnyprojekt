@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaklínač</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../menu/css.css">
+</head>
+<body>
+    <header>
+        <div class="bg-dark text-white jumbotron text-center">
+            <h1 class="text-center">
+                Kvíz
+            </h1> 
+          </div>
+ 
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html">Úvod</a>
+            <a href="../menu/postavy.html">Postavy</a>
+            <a href="../menu/">Bestiář</a>
+            <a href="../menu/">Školy</a>
+            <a href="../menu/jaksestatzaklinacem.html">Jak se stát zaklínačem</a>
+            <a href="../menu/mapa.html">Mapa</a>
+            <a href="../menu/">Kvíz</a>
+        </div>
+        <div id="main">
+
+            <span style="font-size:30px;" class="text-white text-left" onclick="openNav()">
+                <div class="menu"></div>
+                <div class="menu"></div>
+                <div class="menu"></div>
+                <div class="container " onclick="myFunction(this)"></div>
+                    
+            </span>
+        </div>
+     
+    </header>
+   
+        <br>
+        
+        <div class="container-fluid">
+           
+                <div class="col-2"></div>
+            <p class=" bg-white col-lg bg-light text-break jumbotron text-center"> 
+                
+                <main class="container">
+                    <form action="." method="POST">
+                        <!-- Formulářový prvek input-text -->
+                        <p class="alert alert-warning bg-dark otazka">1.boss kterého potkáte na začatku hry Witcher 3 spolu s Vesemirem.</p>
+                        <p class="alert alert-success odpoved collapse">Gryf</p>
+                        <div class="form-group row">
+                            <label for="kral" class="col-sm-3 col-form-label">Zaklínač</label>
+                            <div class="col-sm-3">
+                                  <select class="form-control" name="kral" id="kral">
+                                    <option>Polednice</option>
+                                    <option>Wyverna</option>
+                                    <option selected>Gryf</option>
+                                    <option>Drak</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- Formulářový prvek input-number -->
+                        <p class="alert alert-warning bg-dark otazka">Smrt kterého zaklínace ve hře Witcher 3 nejde ovlivnít. </p>
+                        <p class="alert alert-success odpoved collapse">Vesemir</p>
+                        <div class="form-group row">
+                            <label for="kral" class="col-sm-3 col-form-label">Zaklínač</label>
+                            <div class="col-sm-3">
+                                  <select class="form-control" name="kral" id="kra">
+                                    <option>Vesemir</option>
+                                    <option>Eskel</option>
+                                    <option selected>Lambert</option>
+                                    <option>Geralt</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- Formulářový prvek select -->
+                        <p class="alert alert-warning bg-dark otazka">Kdo byla matka Geralta</p>
+                        <p class="alert alert-success odpoved collapse">Visenna</p>
+                        <div class="form-group row">
+                            <label for="kral" class="col-sm-3 col-form-label">Jméno krále</label>
+                            <div class="col-sm-3">
+                                  <select class="form-control" name="kral" id="kr">
+                                    <option>Visenna</option>
+                                    <option>Yennefer</option>
+                                    <option selected>Triss</option>
+                                    <option>Ciri</option>
+                                  </select>
+                            </div>
+                        </div>
+                        
+                        <hr>            
+                        <div class="form-group row">
+                            <div class="text-center">
+                                <button type="button" class="btn btn-dark text-center " data-toggle="collapse" data-target=".odpoved">Vyhodnotit kvíz</button>
+                            </div>
+                        </div>
+                    </form>
+                
+                </main>
+                
+                
+                
+                
+                
+                
+                
+                <div class="col-2"></div>
+            </div>  
+          
+    
+          <footer>
+        
+            <hr style="height:3px; width:50%; border-width:0; color:rgb(255, 255, 255); background-color:rgb(255, 255, 255)">
+    </footer>
+     <p class="text-center">&copy; 2021 -IT1 Václav Vojtovič</p>
+     <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+        
